@@ -73,8 +73,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void solicitarTokenClassico() {
-        //String nonce = UUID.randomUUID().toString();
-        String nonce = "6ZEiaVwMr_AzzTSJEThOZkbGK2uas6z5F3ZusnUiatg"; // valor fixo para teste de replay
+        String nonce = UUID.randomUUID().toString();
+        //String nonce = "6ZEiaVwMr_AzzTSJEThOZkbGK2uas6z5F3ZusnUiatg"; // valor fixo para teste de replay
 
         IntegrityTokenRequest request = IntegrityTokenRequest.builder()
                 .setCloudProjectNumber(CLOUD_PROJECT_NUMBER)
@@ -92,8 +92,8 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        //String mensagem = UUID.randomUUID().toString();
-        String mensagem = "teste-replay-123";
+        String mensagem = UUID.randomUUID().toString();
+        //String mensagem = "teste-replay-123";
         String nonceBase64 = calcularHash(mensagem, true);
 
         StandardIntegrityTokenRequest request = StandardIntegrityTokenRequest.builder()
@@ -107,8 +107,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void solicitarTokenCombinado() {
-        //String valorUnico = UUID.randomUUID().toString();
-        String valorUnico = "teste-replay-123"; // valor fixo para teste de replay
+        String valorUnico = UUID.randomUUID().toString();
+        //String valorUnico = "teste-replay-123"; // valor fixo para teste de replay
         String mensagem = "acao_valiosa:" + valorUnico;
         String hashNonce = calcularHash(mensagem, true);
 
