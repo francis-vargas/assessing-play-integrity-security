@@ -1,0 +1,29 @@
+# Arquivos do Android Studio / IntelliJ
+*.iml
+.idea/
+.idea/*
+!.idea/codeStyles
+!.idea/runConfigurations
+
+# Gradle
+.gradle/
+**/.gradle/
+build/
+**/build/
+out/
+**/out/
+
+# Config local
+local.properties
+
+# NDK / C++ build
+.cxx/
+.externalNativeBuild/
+
+# Logs
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
