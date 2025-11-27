@@ -1,4 +1,0 @@
-#Thu Nov 06 19:53:11 BRT 2025
-base.0=C\:\\Users\\Francis\\Documents\\mestrado\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
