@@ -4,3 +4,8 @@ app/build/
 app/release/
 app/local.properties
 
+/local.properties
+/.gradle/
+/.idea/
+/build/
+/release/
